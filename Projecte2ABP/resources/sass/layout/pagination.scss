@@ -1,0 +1,51 @@
+// /*Pagination*/
+
+.paginacion ul {
+    margin: 50px 0 50px 0;
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    list-style: none;
+}
+.paginacion li {
+    padding: 11px 16px;
+    border: 1px solid #37bc9d;
+}
+
+.paginacion li:first-child {
+    border-radius: 10px 0px 0px 10px;
+    background-color: #37bc9d;
+}
+
+.paginacion li:last-child {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.paginacion li:last-child {
+    background-color: #37bc9d;
+}
+.pagination li:last-child span {
+    color: white;
+}
+
+.pagination li:first-child span {
+    color: white;
+}
+
+.paginacion span {
+    background-color: #37bc9d;
+}
+
+.paginacion a{
+    color: black;
+}
+
+.disabled span {
+    background-color: transparent !important;
+}
+
+.active {
+    background-color: #37bc9d;
+    border: 1px solid black;
+    color: white;
+}

@@ -1,0 +1,320 @@
+/*Carrito compra*/
+
+.style-none-btn{
+    all:unset; 
+    cursor: pointer;
+}
+
+    /*Cart info*/
+
+    .vendido{
+        background-color: red;
+    }
+
+    .carrito-vacio{
+        width: 150px;
+        height: auto;
+    }
+
+    .container-no-products{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .no-products{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .no-products-titulo{
+        margin-top: 20px;
+        font-size: 28px;
+    }
+
+    .no-products-subtitulo{
+        margin-bottom: 20px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cart-num-products{
+        padding: 30px 0px 0px 50px;
+    }
+
+    .cartDisplayer{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-cart{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "products" 
+            "resum";
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        min-height: 100vh;
+        padding: 25px 50px 50px 50px;
+    }
+
+    .container-resum{
+        height: 352px;
+        background-color: white;
+        grid-area: resum;
+    }
+
+    .cart-product{
+        max-height: auto;
+        border: 2px solid #{$secundary-color};
+        border-radius: 15px;
+        margin: 0px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fijo{
+        display: block;
+    }
+
+    .cart-img{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .cart-img img{
+        max-width: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .cart-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px 30px 10px 20px;
+    }
+
+    .cart-titulo-precio{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cart-titulo{
+        font-size: 30px;
+    }
+
+    .cart-descripcion{
+        font-size: 20px;
+        margin: 10px 0 15px 0;
+    }
+
+    .precio-carrito{
+        display: flex;
+    }
+
+    .cart-precio{
+        display: flex;
+        font-size: 32px ;
+    }
+
+    .delete{
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
+    }
+
+    .cart-eliminar .icon{
+        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        padding: 10px;
+        border-radius: 10px;
+        background-color:  #{$secundary-color};
+        font-size: 13px;
+        color: white;
+    }
+
+    .icon strong{
+        margin-left: 5px;
+        pointer-events: none;
+    }
+
+    .cart-eliminar .icon:hover{
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .cart-resum hr{
+        border: 1px solid gainsboro;
+    }
+
+
+    .cart-resum{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border: 1px solid #{$secundary-color};
+        border-radius: 10px;
+    }
+
+    .resum-titulo{
+        font-size: 28px;
+        margin: 5px 0px 20px 0px;
+    }
+
+    .resum-total{
+        display: flex;
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: bold;
+        margin: 40px 0px 20px 0px;
+    }
+
+    .resum-btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resum-btns .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .resum-btns .btn a{
+        border-radius: 10px;
+        background-color: #{$secundary-color};
+        border: 1px solid #{$secundary-color};
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+        padding: 12px;
+        color: black;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .resum-btns .btnstyle-1:hover{
+        background-color: #319c83;
+    }
+
+
+    .resum-btns .btn .btnstyle-1{
+        color: white;
+
+    }
+
+    .resum-btns .btn .btnstyle-2{
+        background-color: white;
+    }
+
+    .active {
+        display: none;
+    }
+    
+    .loader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border: 16px solid #f3f3f3; /* Light grey */
+        border-top: 16px solid #319c83; /* Blue */
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    @media (min-width: 600px) {
+
+        /*Cart info*/
+
+        .carrito-vacio{
+            width: 300px;
+            height: auto;
+        }
+    
+        .cartDisplayer{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .container-cart{
+            display: grid;
+            grid-template-columns: 65% 35%;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "products resum";
+            justify-content: center;
+            background-color: white;
+            width: 100%;
+            min-height: 100vh;
+            padding: 25px 50px 0px 50px;
+        }
+    
+        .container-products{
+            grid-area: products;
+        }
+    
+        .container-resum{
+            background-color: white;
+            grid-area: resum;
+            margin: 0px 0px 10px 10px;
+        }
+    
+        .cart-product{
+            min-height: 225px;
+            margin: 0px 0px 10px 0px;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        .fijo{
+            display: block;
+            top: 76px;
+            position: sticky;
+        }
+    
+        .cart-info{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .resum-btns .btn a{
+            padding: 25px;
+        }
+    
+    }

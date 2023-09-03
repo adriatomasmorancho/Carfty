@@ -1,0 +1,274 @@
+=== Seguimiento 27/02/23 a 9/03/23
+
+==== Alexander:
+
+. Estructura bbdd- 2h
+. Plantilla nav + footer - 2h
+. Implementación del logger en la app - 2h
+. Creación bbdd en laravel -2h
+. Creación del factory del producto con imágenes de una api - 4h
+. Funcionalidad mostrar productos en la pantalla home - 2h
+. Paginación con diseño default con diseño básico css- 2h
+. Diseño home para móvil/pc - 6h
+. Crear pantalla home con grid solo una plantilla para hacer pruebas - 2h
+
+==== Adria:
+
+. Estructura BBDD - 2 h
+. Creación Vagrant - 1 h
+. Creación BBDD desde laravel - 2 h
+. Creación rutas - 1 h
+. Funcionalidad página detalle producto - 1 h
+. Funcionalidad Buscador - 4 h
+. Funcionalidad Paginación - 4 h
+. Configuración SAS - 2 h
+
+==== Joan:
+
+. Crear proyecto GitLab y añadir estructura Laravel - 1h
+. Memoria: Actualización Apartado Creación Repositorio i Brainstorming de Ideas de Diseño 1h
+. Estructurar BDDD 2H
+. Crear memoria 1h
+. Brainstorming Ideas Diseño - 2h
+. Crear plantilla nav + content + footer - 2h
+. Diseño HOME movil/pc - 6h
+
+=== Seguimiento 9/03/23 a 16/03/23
+
+==== Alexander:
+
+. Añadir icono del carrito en cada producto - 2h
+Mostrar icono de carrito con html, css
+. Funcionalidad añadir/eliminar producto del carrito de la compra - 6h
+Funcionalidad de JS donde añade o elimina el producto del localStorage, al mismo tiempo se modifica el color del icono y el icono del carrito del nav muestra cuántos productos hay en él.
+. Crear pantalla login diseño superbásico con solo el logo - 1h
+Diseño básico de login solo muestra el logo para volver hacia el home.
+. Participación con la funcionalidad de la filtración por categorías, ordenación y el buscador - 5h
+Acabar la funcionalidad del filtro.
+
+==== Adria:
+
+. Comencé haciendo la relación entre las tablas "productos", "categorías" y "categoria_producto", y su inserción en el fichero DataSeeder. - 2 h
+
+. Desarrollé la estructura de los elementos de ordenación y categoría en el fichero home.blade.php, y configuré sus respectivas rutas de formulario para que fueran a su método correspondiente en el Home Controller. - 1 h 30 min
+
+. También creé una función que se utiliza en los métodos de búsqueda, categoría y ordenación, pasándoles sus variables de sesión respectivas para permitir el filtrado por todos los campos al mismo tiempo sin que la página falle. - 8h
+
+==== Joan:
+
+. Funcionalidad carrito de la compra - 1h
+
+. Creación de menús categorias y menús ordenación - 3h
+
+1- Creación del menú de ordenación y categorías en Resources-&gt;Home.blade.php
+2- Creación de estilos css en la carpeta Public -&gt; CSS-&gt; Menus.css
+3- Añadir estilo en hoja de estilos en Layout -&gt; app.blade.php
+4- Adaptación de los menús responsive design
+
+. Filtración por categoría, búsqueda, ordenación - 5h
+
+. Implementar clase de prueba, funcionalidades pantalla Home - 3h
+
+=== Seguimiento 16/03/23 a 23/03/23
+
+==== Alexander:
+
+. Refactorización sass package - 3h
+
+. Maquetación diseño carrito - 4h
+
+. Eliminar producto de carrito - 4h
+
+. Añadir producto en la pantalla detalle producto - 2h
+
+==== Adria:
+
+. Wireframe y Mockup de la página carrito - 4h
+
+. Calcular total de productos que hay en el carrito y el precio total - 1h
+
+. Creación de tags y su relación con productos - 2h
+
+. Funcionalidad filtrar por tags - 3h
+
+. Test Home - 4h
+
+. Refactorización código en HomeController - 1h
+
+==== Joan:
+
+. Participación en Test Home - 2h
+
+. Responsive de Home - 4h
+
+. Registro y Login maquetación(HTML y CSS) - 2h
+
+. Wireframe/Mockup Registro y Login - 3h
+
+. Refactorización CSS - 3h
+
+. Actualización Guía de estilos - 1h
+
+=== Seguimiento 23/03/23 a 30/03/23
+
+==== Alexander:
+
+. Cambiar el código de todo el carrito - 3h
+
+. Refactorización código carrito - 2h
+
+. Funcionalidades carrito - 4h
+
+==== Adria:
+
+. Creación y funcionalidades Landing Page - 3h
+
+. Refactorización de código:Producto, HomeController, LandingPageController - 2h
+
+. Modificar funcionalidades de filtración en la pantalla Home para quitar los tags. - 3h
+
+. Solucionar problemas con query bbdd - 1 h
+
+==== Joan:
+
+. Funcionalidades Login y registro - 3h
+
+. Actualización Guía de estilos - 1h
+
+. MailTrap - 5h
+
+=== Seguimiento 30/03/23 a 20/04/23
+
+==== Alexander:
+
+. Subida de carrito a servidor - Horas esperadas : 5 h - Horas reales: 10 h
+
+. Refactorización código carrito - Horas esperadas : 2 h - Horas reales: 3 h
+
+. Funcionalidades carrito - Horas esperadas : 2 h - Horas reales: 3 h
+
+. Vistas de registro y Login - Horas esperadas : 2 h - Horas reales: 2 h
+
+. Responsive vista carrito - Horas esperadas : 2 h - Horas reales: 2 h
+
+. Responsive Home - Horas esperadas : 1 h - Horas reales: 1 h
+
+. Refactorización css - Horas esperadas : 1 h - Horas reales: 1 h
+
+==== Adria:
+
+. Funcionalidad Editar Perfil - Horas esperadas : 2 h - Horas reales: 2 h
+
+. Funcionalidad Tienda - Horas esperadas : 2 h - Horas reales: 2 h
+
+. Funcionalidad crear, editar y eliminar productos - Horas esperadas : 5 h - Horas reales: 7 h
+
+. Refactorizar código - Horas esperadas : 2 h - Horas reales: 2 h
+
+. Modificación de todos los filtros en Home y landing - Horas esperadas : 2 h - Horas reales: 4 h
+
+. Añadir funcionalidad categoría, tags y tienda en la pagina show - Horas esperadas : 2 h - Horas reales: 2 h
+
+. Actualización de bbdd - Horas esperadas : 3 h - Horas reales: 3 h
+
+==== Joan:
+
+. Mail Trap - Horas esperadas : 6 h - Horas reales: 12 h
+
+. Moqups y Wireframe - Horas esperadas : 2 h - Horas reales: 4 h
+
+. Refactorización codigo - Horas esperadas : 2 h - Horas reales: 3 h
+
+. Actualización de bbdd - Horas esperadas : 2 h - Horas reales: 2 h
+
+=== Seguimiento 20/04/23 a 27/04/23
+
+==== Alexander:
+
+. Refactorización código - Horas esperadas : 1 h - Horas reales: 1 h
+
+. Arreglo login - Horas esperadas : 4 h - Horas reales: 3 h
+
+. Cambio de idioma en los errores - Horas esperadas : 1 h - Horas reales: 1 h
+
+==== Adria:
+
+. Todos los filtros de la tienda funcionales. - Horas esperadas : 4 h - Horas reales: 4 h
+
+. Diferenciar la vista de la tienda de si eres el propietario o no. - Horas esperadas : 2 h - Horas reales: 2 h
+
+. Lógica y vista para habilitar o no habilitar productos. - Horas esperadas : 1 h - Horas reales: 1 h
+
+. Refactorización código. - Horas esperadas : 1 h - Horas reales: 1 h
+
+. Añadir campos a editar perfil y su respectiva lógica (shop_color y shop_banner). - Horas esperadas : 1 h - Horas reales: 1 h
+
+==== Joan:
+
+. Acabar MailTrap funcional para verificar la cuenta - Horas esperadas : 3 h - Horas reales: 2 h
+
+. He olvidado la contraseña - Horas esperadas : 6 h - Horas reales: 6 h
+
+. Empezar Api imágenes - Horas esperadas : 3 h - Horas reales: 4 h
+
+
+=== Seguimiento 27/04/23 a 11/05/23 
+
+==== Alexander:
+
+. Refactorización código 
+
+. Arreglo carrito 
+
+. Acabar Api imágenes 
+
+==== Adria:
+
+. Lógica Ventas y compras. 
+
+. Lógica Chat
+
+. Notificaciones Chat
+
+. Refactorización código
+
+. Detalle Pedido
+
+==== Joan:
+
+. Acabar Api imágenes 
+
+. Exportar PDF
+
+
+=== Seguimiento 11/05/23 a 21/05/23 
+
+==== Alexander:
+
+. Vagrant 
+
+. Estilos Páginas
+
+. Responsive
+
+. Refactorización código
+
+. Mostrar imagenes de API
+
+. Cache
+
+==== Adria:
+
+. Test. 
+
+. Solucionar errores chat
+
+. Refactorización código
+
+==== Joan:
+
+. Logs 
+
+. Refactorización código
+
+. Cache

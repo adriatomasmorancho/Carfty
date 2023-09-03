@@ -1,0 +1,18 @@
+.imagenes-secundarias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 15em));
+}
+
+.imagenes-secundarias img{
+    object-fit: cover;
+    width: 100%;
+    max-width: 200px;
+    height: max-content;
+
+}
+
+.imageProducto img{
+    padding: 10px 10px;
+    height: 150px;
+    border-radius: 20px;
+}

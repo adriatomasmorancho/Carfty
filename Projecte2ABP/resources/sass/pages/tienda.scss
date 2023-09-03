@@ -1,0 +1,70 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  .banner img {
+    width: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+
+  .menu-tienda{
+    display: grid;
+    justify-content: flex-end;
+    margin: 4px 100px 10px 20px;
+  }
+
+  .btn-editar-eliminar{
+    display: flex;
+  }
+
+  .menus-tienda{
+    margin: 4px 20px 10px 20px;
+
+  }
+
+  .barraBusqueda-tienda {
+    grid-area: search;
+  }
+
+
+@media (min-width: 880px) {
+
+  .menus-tienda{
+    margin: 4px 137px 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .barraBusqueda-tienda{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+  .menu-tienda{
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px 100px 10px 20px;
+  }
+
+  .margin-btn{
+    margin-right: 10px;
+  }
+}
+  .nohabilitado{
+    background-color: yellow;
+}
+
+.destacado{
+  background-color: green;
+}

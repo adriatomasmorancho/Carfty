@@ -1,0 +1,21 @@
+== Creación del Repositorio Gitlab
+Para llevar a cabo este proyecto, hemos creado un repositorio en Gitlab con diferentes ramas, para facilitar el trabajo de los integrantes del grupo.
+
+El proyecto está creado con Laravel 10. Para poder utilizar dicha versión, hemos instalado además la última versión de PHP: 8.2.
+
+Hemos decidido crear 2 ramas principales:
+
+. Main : Rama donde encontramos el estado final del proyecto.
+
+. Develop : Rama secundaria donde cada integrante, pueda subir actualizaciones del código. Una vez nos hayamos asegurado que en esta rama, presentamos una versión estable el proyecto, podemos subir los cambios a la rama Main.
+
+Además de estas ramas, para cada funcionalidad crearemos una rama adicional donde ir subiendo los cambios del código de dicha funcionalidad. El nombre de la rama irá definido por la siguiente estructura: *feature_ + Nombre Funcionalidad*-. Una vez terminado el código de dicha funcionalidad, pasaremos el código a la rama develop, y borraremos la rama anterior.
+
+== Brainstorming Ideas Diseño Web
+
+Para realizar el diseño de la web, nos hemos basado en la estructura de algunos de los marketplaces más conocidos de la actualidad.
+
+Hemos podido observar, que en todos ellos usan, como color predominante, el blanco, seguramente, por la adaptabilidad de dicho color a las distintas imágenes de productos que se mostrarán como parte del catálogo de la web, de dicho color a las distintas imágenes de productos que se mostrarán como parte del catálogo de la web.
+
+Además de ello, con el fin de optimizar el espacio del contenido del sitio web, encontramos como regla general en la parte superior de página, un buscador, el cual nos permite filtrar tanto por categorías, como por un producto concreto.
+

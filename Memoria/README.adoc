@@ -1,0 +1,351 @@
+:toc-title: Index
+:toc: left
+
+:figure-caption: Figure 
+
+:imageDir: ./images
+
+= CrafTy
+
+== Introducción.
+=== Miembros grupo.
+El equipo de trabajo está formado por tres miembros:
+
+• Adrià Tomás Morancho 
+• Alexander Garcia Loujina
+• Joan Canals Ortiz
+
+Los tres miembros del equipo se encargan de realizar el diseño y el desarrollo de la aplicación a partes iguales.
+
+
+=== Objetivo aplicación.
+
+Crear una web, donde se pueden apuntar todos aquellos pequeños artesanos que quieran vender sus productos.
+
+== Necesidades
+
+Los artesanos necesitan una aplicación moderna que les facilite la vida a la hora de poderse comunicar con cualquier cliente sin el problema de la distancia y de esta forma poder vender más.
+
+== Tarjet
+
+Crafty va dirigido a pequeños artesanos que no tienen recursos para poder ofrecer sus productos a nivel mundial, por el que solo pueden dirigirse a su mercado local.
+
+== Memoria semanal
+
+include::MemoriaSemanal.adoc[]
+
+== Metología BEM
+    
+BEM (Block, Element, Modifier o Bloque, Elemento, Modificador) es una metodología ágil de desarrollo basada en componentes. 
+    
+El objetivo final de BEM es dividir la interfaz de usuario en bloques independientes para crear componentes escalables y reutilizables
+    
+=== Bloques 
+
+El bloque de elementos corresponde a la raíz de la clase y deberá ir siempre primero. Cuando ya está definido es posible nombrar los elementos que compondrán la estructura final y su contenido.
+
+.BEM BLOQUE HTML/CSS:
+
+image::images/Recorte_BEM_BLOQUE.png[]
+
+=== Elementos
+
+El bloque es el todo y los elementos son las piezas de este bloque.
+
+De acuerdo a la metodología BEM, cada elemento se escribe después del bloque padre, usando dos guiones bajos:
+
+.BEM ELEMENTO HTML/CSS:
+
+
+image::images/Recorte_BEM_ELEMENTO.png[]
+
+=== Modificadores
+
+Para modificar el estilo de un elemento específico, existen los modificadores. Estos se usan agregando un doble guión justo después del elemento o bloque que se quiere modificar:
+
+.BEM MODIFICADORES HTML/CSS:
+
+
+image::images/RECORTE_BEM_MODIFICADOR.png[]
+
+=== Ventajas Metodología BEM
+
+* Añade especificidad: Usa un selector único para cada regla, lo que permite reducirla y hacer menos repeticiones.
+
+* Aumenta la independencia: Los bloques se pueden mover a cualquier parte del documento, sin afectar los estilos.
+
+* Mejora la herencia múltiple: Se puede cambiar cualquiera de las tres partidas sin afectar a las demás.
+
+* Permite la reutilización: Es posible reciclar ciertas áreas de código desde un proyecto hacia otro, esto debido a la no existencia de dependencias mayores en cuanto a la implementación de cada uno de los bloques estructurados.
+
+* Entrega simplicidad: Permite un fácil entendimiento una vez conocido el proceso lógico sobre el cual se basa. A su vez, las convenciones a la hora de nombrar las clases permiten tener un control absoluto al saber a qué, quién y hacia dónde hacemos referencia dentro de una estructura.
+
+
+== 5. Diseño base de datos
+
+Esta aplicación necesita una base de datos para guardar diferentes tipos de datos. El diseño que hemos realizado es el siguiente.
+La base de datos dispone de doce tablas:
+
+. Usuarios
+. Productos
+. Categorias
+. Tags
+. Categorias_Productos
+. Tags_Productos
+. Shop
+. Pedidos
+. Linea Pedidos
+. Chat
+. Chat_Usuarios
+. Mensajes
+
+
+image::images/bbdd.png[]
+
+
+== 6. Diseño paginas web
+
+=== Sketching
+
+Formato mobil:
+
+image::images/Foto1.png[]
+
+image::images/Foto3.png[]
+
+image::images/Foto5.png[]
+
+Formato web:
+
+image::images/Foto2.png[]
+
+image::images/Foto4.png[]
+
+image::images/Foto6.png[]
+
+=== Wireframe y mockups
+
+Link de https://www.figma.com/file/EVaFZt8UopVzNsSeW6IgD4/Crafty?node-id=2%3A75&t=pb0Qbd9BxKa90O7J-1[Wireframe y mockups]
+
+== 7. Guia de estilo
+
+Link de https://www.figma.com/file/EVaFZt8UopVzNsSeW6IgD4/Crafty?node-id=2%3A75&t=pb0Qbd9BxKa90O7J-1[Guia de estilos]
+
+== 8. Confección manual instalación/distribución de la aplicación
+
+Link manual instalación de nuestra aplicación + api con https://docs.google.com/document/d/1WC8Sjg42la3bulftAW-ozpXhMWwxwU7xuRzo2fuhU4w/edit?usp=sharing[Vagrant]
+
+Link manual para poder descargar detalle pedido a https://docs.google.com/document/d/1bAwcl_JCe9OgNwROs6bPntGa8TA_6xUKuCJEjioiPQA/edit?usp=sharing[PDF]
+
+Link a como ejecutar los https://docs.google.com/document/d/11wkRxL7iW45BEQHAgyNPiwSjbufcDgJeRuxempRrT_c/edit?usp=sharing[Test]
+
+
+== 9. Confección manual usuario.
+
+A continuación una lista de las funcionalidades que puede realizar el usuario dentro de Crafty en orden:
+
+
+*USUARIO SIN TIENDA:*
+
+1. La primera página con la cual se encuentra el usuario es la landing page, donde se introduce el concepto principal del programa y puedes ver los diferentes tags, junto con sus productos(aleatoriament) que el administrador cree que tienen que salir dependiendo de la temporada en la que nos encontramos. Desde esta el usuario puede:
+- Ir a iniciar sesión
+- Buscar un producto por su nombre en el buscador
+- Filtrar por tag a la hombre
+- Ver el detalle del producto seleccionado
+- Ir a la home sin ningún filtro de tag.
+- Podras ir a la página carrito
+
+image::images/landing.png[]
+
+2.En caso de no estar registrado el usuario puede registrarse en el programa. Los datos requeridos para realizar el registro son el nombre de usuario, correo electrónico y contraseña. Es necesario que la contraseña sea superior a 6 caracteres y que no tenga caracteres especiales. Una vez hecho el registro te llegará en el correo un mensaje de verificación que te llevará al inicio de sesión. 
+
+image::images/register.png[]
+
+image::images/missatgeRegistre.png[]
+
+image::images/mailtrap.png[]
+
+
+3.Por otro lado, en caso de ya disponer de una cuenta de usuario, se puede iniciar sesión. Tanto cuando un usuario se registra como cuando un usuario inicia sesión, es redirigido a la landing y 2 botones son añadidos al navbar, el primero es un enlace en la página de compras y el segundo es un enlace en la página de chat, se muestra un avatar con la inicial de tu nombre. Haciendo clic al avatar aparecen dos botones, uno para ir a la página de editar usuario y otro botón el cual permite cerrar sesión.
+
+
+image::images/login.png[]
+
+
+image::images/landingLogueado.png[]
+
+
+4.La pantalla home es donde se encuentra la lista de todos los productos habilitados que están a la aplicación. Puedes filtrar por nombre, ordenación y categorías. También puedes acceder en la página detalle producto y añadir el producto a tu carrito.
+
+
+image::images/home.png[]
+
+
+ 
+5.Si fas clic a un producte aniras a la pagina de detall producte on podras veure tota la informació del producte: nom, descripció, preu, categoria, tags i tenda. Els camps de tags, la categoria son redirección a diferents filtratges a la pantalla home . El camp de tenda et porta a la pagina de tenda de la persona a la que li pertany aquest producte.
+
+
+image::images/detallePorducto.png[]
+
+
+6.Cuando tenemos productos a carrito y queremos hacer ya un pedido vayamos a la página carrito, donde tendremos la lista de todos productos que queremos comprar, donde podemos eliminar productos, tramitar el pedido y seguir comprando.
+Cosas a tener en cuenta:
+- Si un producto se ha desabilitat , vendido no se fara el tramitar pedido ya que te obligará a eliminar ese producto. (se ve claramente por que se pone de color rojo el producto).
+- Si el producto se eliminado se borra automaticament del carrito.
+- Para poder tramitar un pedido tienes que tener una sesión iniciada.
+- Si tienes productos de diferentes tiendas , se farán los pedidos según las tiendas.
+
+
+image::images/carrito.png[]
+
+
+image::images/carritoIncorrecte.png[]
+
+
+image::images/carritoCorrecte.png[]
+
+
+
+
+7.A la pantalla de compras sortirán todos los pedidos que has hecho. Pone información de a qué tienda pertenece, precio total, cuando hiciste el pedido y lo estado en el que esta (cosa que anira cambiant a medida que el vendedor vaya aceptant los diferentes estados del pedido). Puedes hacer clic en el pedido cosa que hará que vayas a la pantalla de detalle pedido.
+
+
+image::images/compras.png[]
+
+ 
+8.La vista detalle pedido tiene información del pedido junto con su línea comanda donde aparecen los productos que has comprado. También tienes un botón para descargar PDF.
+
+
+image::images/detallePedido.png[]
+
+
+9.En el momento que tramitas un pedido se te crea un chat con el vendedor, como el que té podras mandar mensajes. Estaras todo lo rato notificado si hay un nuevo mensaje en el chat, ya sea automatico miedo lo cambio de estado en el pedido o un mensaje del vendedor.
+
+
+image::images/chat.png[]
+
+
+*USUARIO CON TIENDA:* 
+
+10.Un usuario puede crear su tienda desde la pantalla editar perfil.
+Como se hace:
+- Marcando el checkbox donde pone “seleccionar para obtener una tienda”.
+- Poniéndole un nombre a la tienda(que será único).
+- Puedes poner el logo de la tienda, pero no es obligatorio.
+
+
+image::images/editarPerfil.png[]
+
+
+11.Pagina Tienda, en esta página tienes las opciones de crear, editar y borrar productos.
+
+
+image::images/tienda.png[]
+
+
+12.Finalmente tenemos la página de ventas donde tienes que decidir si quieres ir aceptando o denegando los diferentes estados del pedido.
+Estos son todos los estados que puede tener un pedido:
+- Pendiente
+- Pago aceptado
+- Pedido Enviado
+- Pedido Recibido
+- Pedido rechazado 
+- Pedido Finalizado
+
+
+image::images/ventas.png[]
+
+
+
+
+== 10. Líneas futuras.
+
+. Mejora de los estilos de la pantallas.
+
+. Añadir alguna biblioteca externa para poder implementar los pagos.
+
+. Más refactorización de código
+
+. Mejorar responsive tanto web como mobil
+
+== 11. Conclusiones.
+
+Haciendo una retrospectiva a todo el proceso de desarrollo de Crafty, podemos sacar las
+conclusiones argumentadas a continuación.
+
+Por un lado, este proyecto nos ha proporcionado la posibilidad de ampliar nuestros
+conocimientos en diferentes aspectos, puesto que hemos aprendido a utilizar el Framework de Laravel.
+
+Por otro lado, este se ha realizado en equipos de tres integrantes. Esto nos ha ayudado a organizar
+las tareas realizadas entre nosotros y, como ha resultado, hemos obtenido una mejora en la eficiencia
+de las tareas y nos ha permitido poder finalizar el desarrollo con tiempo suficiente para
+realizar la gran parte de las tareas a sus tiempos correspondientes.
+
+Resumiendo la comunicación del grupo ha sido muy buena.
+
+Finalmente, creemos que la realización de este proyecto ha sido una experiencia enriquecedora, puesto que
+nos ha proporcionado una gran cantidad de conocimientos y hemos podido finalizar el
+desarrollo de un software del cual estamos orgullosos.
+
+== 12. Desviaciones en la planificación.
+
+Hemos tenido que hacer varias modificaciones en nuestra planificación, ya que algunas veces por diferentes motivos tardábamos más de la cuenta en hacer las tareas que teníamos asignadas.
+
+Cosa es normal, ya que aún estamos bastante verdes y estamos aprendiendo a planificar antes de hacer una tarea saber cuanto tiempo nos ocupara.
+
+Pero a medida que hemos ido asignando tareas semanaa a semana, nos han empezado a cuadrar horas.
+
+Las horas las puedes ver en el apartado de memoria semanal.
+
+== 13. Aportaciones del proyecto.
+
+. Hemos aprendido conocimientos nuevos
+
+. Hemos aprendido nuevas herramientas y frameworks que no conociamos
+
+. Trabajar en equipo
+
+== 14. Glossario.
+
+. Guía de estilos: Guía compuesta para una serie criterios establecidos. En el caso de este proyecto, los
+criterios son la paleta de colores y la fuente y medida del texto.
+. Wireframe: Guía visual la cual representa el esqueleto o estructura visual de un sitio web.
+. Scketching: Esbozo utilizado como diseño temprano.
+. Mockup: Modelo a escala real el cual es utilizado para representar el diseño final.
+. BEM (Block, Element, Modifier o Bloque, Elemento, Modificador): es una metodología ágil de desarrollo basada en componentes. 
+. Sass: se utiliza para describir el estilo de un documento de forma limpia y estructurada, con más poder que CSS. Sass proporciona sencillez, sintaxis más elegante e implementa varias características que son útiles para crear hojas de estilo manejables.
+
+== 15. Webgrafía.
+
+. https://chat.openai.com/[Chat GPT]
+. https://stackoverflow.com/[StackOverflow]
+. Documentación https://laravel.com/docs/10.x/readme[Laravel]
+. Documentación https://httpd.apache.org/docs/[Apache]
+. Documentación https://sass-lang.com/documentation/[SASS]
+. Documentación https://getcomposer.org/doc/[Composer]
+
+== 16. Presentación proyecto.
+
+=== Video
+
+Link del video : https://drive.google.com/file/d/1zri0VikQi_47VGFz2BXkDS5UbKc19cfx/view?usp=sharing[Crafty]
+
+=== Portafolis
+
+. https://tomas.morancho.adria.gitlab.io/portafoli/[Adria]
+
+. https://alexanderby54.gitlab.io/alexander_garcia_portafolio/[Alexander]
+
+. https://jaycee98.github.io/[Joan]
+
+=== Repositorio
+
+Link del repositorio https://github.com/Ioujina/Crafty[GitHub]
+
+=== Trello 
+
+Link de https://trello.com/invite/b/gcYEvlRV/ATTIe03fba347e23af7d6e3022101f2f071955484756/planning-grup-6-adria-joan-alexander[Trello]
+
+
+
+

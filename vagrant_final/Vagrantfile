@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/focal64"
+
+  config.vm.define "apicrafty" do |api|
+    api.vm.hostname = "apicrafty"
+    api.vm.synced_folder "./ApiCrafty", "/Programas/apicrafty"
+    api.vm.network "private_network", ip: "172.16.50.60"
+    api.vm.provision "shell", path: "bootstrap2.sh"
+    api.vm.provider "virtualbox" do |vb|
+      vb.name = "apicrafty"
+      vb.memory = "512"
+      vb.cpus = 1
+    end
+  end
+
+  config.vm.define "crafty" do |gymwrat|
+    gymwrat.vm.hostname = "crafty"
+    gymwrat.vm.synced_folder "./Crafty", "/Programas/crafty"
+    gymwrat.vm.network "private_network", ip: "172.16.50.50"
+    gymwrat.vm.provision "shell", path: "bootstrap.sh"
+    gymwrat.vm.provider "virtualbox" do |vb|
+      vb.name = "crafty"
+      vb.memory = "512"
+      vb.cpus = 1
+    end
+  end
+end

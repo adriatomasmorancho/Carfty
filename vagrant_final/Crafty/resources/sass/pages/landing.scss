@@ -1,0 +1,106 @@
+.landing{
+    display: flex;
+    justify-content: center;
+
+}
+
+.landing-container{
+    width: 90%;
+    height: 100%;
+    margin: 20px;
+}
+
+.landing-banner{
+    background-image: url(../Imagenes/landing.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.landing-banner:before {
+    content: "";
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(104.58deg, #{$secundary-color} -2.26%, #{$secundary-color} 47.46%);
+    opacity: 0.7;
+}
+
+.landing-tag{
+    text-decoration: none;
+    color: #{$secundary-color};
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.landing-tag:hover{
+    text-decoration-line: underline;
+}
+
+.banner-container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner-container a{
+    z-index: 3;
+}
+
+.banner__logo{
+    width: 250px;
+    margin: 10px 0 0 0;
+    z-index: 3;
+}
+
+.banner__texto{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__texto h4{
+    font-size: 24px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    color: #{$secundary-color};
+    border-radius: 20px;
+    box-shadow: 0 0 250px white;
+    z-index: 3;
+
+}
+
+.banner__texto p{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    z-index: 3;
+    font-weight: bold;
+}
+
+.productoDisplayerLanding {
+    margin-top: 15px;
+    padding: 0px 30px 30px 30px;
+    gap: 30px;
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 14em));
+  }
+
+@media (min-width: 600px) {
+    .banner-container{
+        width: 40%;
+    }
+}

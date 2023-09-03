@@ -1,0 +1,22 @@
+$primary-color : #FFFF;
+$secundary-color :   #37BC9D;   
+$footer-color :  #ECEFF1;
+$display : grid;
+$font-family: Ubuntu, "times new roman", times, roman, serif;
+$sizeDiv : 100px;
+
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: #{$font-family};
+    background-color: #{$primary-color};
+    min-height:100vh;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+}
+

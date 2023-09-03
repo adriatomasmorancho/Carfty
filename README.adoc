@@ -1,0 +1,33 @@
+= Project 2 ABP - CrafTy (MarketPlace)
+
+== Miembros del grupo
+
+CrafTy está realizado a partes iguales por Adrià, Alexander, Joan. Són alumnos de segundo año de DAW en el instituto Nicolau Copèrnic.
+
+== Links fuentes
+
+Link del video : https://drive.google.com/file/d/1zri0VikQi_47VGFz2BXkDS5UbKc19cfx/view?usp=sharing[Crafty]
+
+Link del repositorio https://git.copernic.cat/canals.ortiz.joan/project-2-abp-marketplace.git[GitLab]
+
+Link del repositorio https://github.com/Ioujina/Crafty[GitHub]
+
+Link de https://www.figma.com/file/EVaFZt8UopVzNsSeW6IgD4/Crafty?node-id=2%3A75&t=pb0Qbd9BxKa90O7J-1[Figma]
+
+Link de https://trello.com/invite/b/gcYEvlRV/ATTIe03fba347e23af7d6e3022101f2f071955484756/planning-grup-6-adria-joan-alexander[Trello]
+
+Link a como ejecutar los https://docs.google.com/document/d/11wkRxL7iW45BEQHAgyNPiwSjbufcDgJeRuxempRrT_c/edit?usp=sharing[Test]
+
+Link manual instalación de nuestra aplicación + api con https://docs.google.com/document/d/1WC8Sjg42la3bulftAW-ozpXhMWwxwU7xuRzo2fuhU4w/edit?usp=sharing[Vagrant]
+
+Link manual para poder descargar detalle pedido a https://docs.google.com/document/d/1bAwcl_JCe9OgNwROs6bPntGa8TA_6xUKuCJEjioiPQA/edit?usp=sharing[PDF]
+
+=== Portafolis
+
+. https://tomas.morancho.adria.gitlab.io/portafoli/[Adria]
+
+. https://alexanderby54.gitlab.io/alexander_garcia_portafolio/[Alexander]
+
+. https://jaycee98.github.io/[Joan]
+
+

@@ -1,0 +1,1 @@
+<h1>Se ha registrado el usuario {{ $name}} en la BBDD</h1>

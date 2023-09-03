@@ -1,0 +1,411 @@
+.container {
+    display: grid;
+}
+.containerCarrusel {
+    display: grid;
+}
+
+.containerProduct__info{
+    padding: 20px;
+}
+
+#hiddenElemento {
+    display: none;
+}
+
+#showElemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrusel {
+    margin-top: 50px;
+    justify-self: center;
+
+    display: flex;
+}
+
+.elementos {
+    display: flex;
+}
+
+.elementos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento {
+    justify-self: center;
+    display: grid;
+    margin: 0 50px;
+    background-color: #37bc9d;
+    width: 200px;
+    height: 50px;
+}
+
+.ContainerProduct {
+    margin-top: 40px;
+    justify-self: center;
+}
+
+.containerProduct__images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+#imagen-principal {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.imageProduct {
+    display: flex;
+}
+
+.imageProduct img {
+    padding: 10px 10px;
+    justify-self: center;
+    width: 30%;
+    height: 152px;
+    border-radius: 20px;
+}
+
+.titulo_product{
+    font-size: 30px;
+}
+
+
+.continerProducts_extraInfo {
+    padding: 10px 0;
+}
+
+.shop_image{
+    padding: 10px 0;     
+}
+
+.name_shop{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+
+.logo_tienda{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+
+.shop_image img {
+    width: 70px;
+    height: 70px;
+    background-color: #37bc9d;
+}
+
+.detailsProducts {
+    padding: 10px 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 3;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+}
+
+.ContainerCategorias {
+}
+
+.container-tags{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(4em, 14em));
+}
+
+.categorias {
+    padding-top: 00px;
+    display: grid;
+    width: 80px;
+}
+
+.categorias button {
+    margin-top: 10px;
+    width: 120px;
+    padding: 12px;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    background-color: #37bc9d;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    border: 0px;
+}
+
+.carritoCompra {
+    justify-self: right;
+    width: 40px;
+    height: 40px;
+}
+
+.categorias a {
+    padding: 3px;
+    background-color: #eceff1;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+}
+
+.tags {
+    display: flex;
+    width: 150px;
+}
+
+.tags a {
+    width: 120px;
+    padding: 12px;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    background-color: #37bc9d;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.tags span {
+    justify-self: right;
+    padding-right: 9px;
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    font-weight: bold;
+}
+
+.tags button {
+    background-image: url(../Imagenes/iconos/carrito.png);
+    align-items: top;
+    justify-self: right;
+
+    width: 30px;
+    height: 30px;
+
+    background-size: cover;
+    border: 0px;
+    border-radius: 20px;
+}
+
+.tags h2 {
+    height: 20px;
+}
+
+.imagencarro {
+    position: relative;
+}
+
+#cart_menu_num {
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    position: absolute;
+    left: 76.5%;
+    background: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 3px;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: block;
+    }
+    .containerCarrusel {
+        display: block;
+    }
+
+    #hiddenElemento {
+        display: none;
+    }
+
+    #showElemento {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .carrusel {
+        margin-top: 50px;
+        justify-self: center;
+
+        display: flex;
+    }
+
+    .elementos {
+        display: flex;
+    }
+
+    .elementos div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .elemento {
+        justify-self: center;
+        display: grid;
+        margin: 0 50px;
+        background-color: #37bc9d;
+        width: 200px;
+        height: 50px;
+    }
+
+    .ContainerProduct {
+        margin-top: 70px;
+
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-self: center;
+    }
+
+    #imagen-principal {
+        height: 500px;
+    }
+
+    .imageProduct {
+        display: flex;
+    }
+
+    .imageProduct img {
+        padding: 10px 10px;
+        justify-self: center;
+        width: 30%;
+        height: 152px;
+        border-radius: 20px;
+    }
+
+    .continerProducts_extraInfo {
+        padding: 10px 0;
+    }
+
+
+    .shop_image img {
+        background-color: #37bc9d;
+    }
+
+    .detailsProducts {
+        padding: 10px 10px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 3;
+        font-family: Ubuntu, "times new roman", times, roman, serif;
+    }
+
+    .ContainerCategorias {
+        gap: 25px;
+        padding-left: 10px;
+    }
+
+    .container-tags{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(2em, 14em));
+    }
+
+    .categorias {
+        padding-top: 00px;
+        display: grid;
+        width: 80px;
+    }
+    .categorias button {
+        margin-top: 10px;
+        width: 120px;
+        padding: 12px;
+        font-family: Ubuntu, "times new roman", times, roman, serif;
+        background-color: #37bc9d;
+        font-weight: bold;
+        color: white;
+        border-radius: 20px;
+        border: 0px;
+    }
+
+    .carritoCompra {
+        justify-self: right;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .categorias a {
+        padding: 3px;
+        background-color: #eceff1;
+        text-decoration: none;
+        border-radius: 20px;
+        font-weight: bold;
+        border: 1px solid black;
+        font-family: Ubuntu, "times new roman", times, roman, serif;
+    }
+
+    .tags {
+        display: flex;
+        width: 150px;
+    }
+
+    .tags a {
+        width: 120px;
+        padding: 12px;
+        font-family: Ubuntu, "times new roman", times, roman, serif;
+        background-color: #37bc9d;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        border-radius: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .tags span {
+        justify-self: right;
+        padding-right: 9px;
+        font-family: Ubuntu, "times new roman", times, roman, serif;
+        font-weight: bold;
+    }
+
+    .tags button {
+        background-image: url(../Imagenes/iconos/carrito.png);
+        align-items: top;
+        justify-self: right;
+
+        width: 30px;
+        height: 30px;
+
+        background-size: cover;
+        border: 0px;
+        border-radius: 20px;
+    }
+
+    .tags h2 {
+        height: 20px;
+    }
+
+    .imagencarro {
+        position: relative;
+    }
+
+    #cart_menu_num {
+        font-family: Ubuntu, "times new roman", times, roman, serif;
+        position: absolute;
+        left: 76.5%;
+        background: red;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 3px;
+    }
+}

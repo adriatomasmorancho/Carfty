@@ -1,0 +1,41 @@
+.table-container {
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #37BC9D;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #37BC9D;
+    text-align: center;
+}
+
+th {
+    background-color: #37BC9D;
+    color: white;
+}
+
+td {
+    background-color: white;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: #37BC9D;
+    color: white;
+}
+
+.titulo_pedido_precio{
+    margin: 20px;
+}
+.separacion_titulo{
+    margin-top: 30px;
+}

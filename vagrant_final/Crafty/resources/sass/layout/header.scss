@@ -1,0 +1,295 @@
+
+/*HEADER*/
+
+.menu-logo{
+    grid-area: menulogo;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.menu-logo .logo{
+    margin-left: 20px;
+}
+
+.barraBusqueda{
+    grid-area: search;
+    margin: 4px 20px 10px 20px;
+}
+
+.carrito-cuenta{
+    grid-area: carritocuenta;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.carrito-cuenta .carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-cuenta .cuenta-color{
+    background-color: #37BC9D;
+    color: #ffffff;
+}
+
+.carrito-cuenta .cuenta{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.shop{
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;   
+}
+
+.cuenta-menu{
+    position: relative;
+}
+
+.cuenta-letra{
+    position: absolute;
+}
+
+
+
+// .carrito-cuenta #btnLogout{
+//     padding: 10px;
+//     border-radius: 10px;
+//     background-color: #37BC9D;
+//     color: white;
+// }
+
+// .carrito-cuenta #btnLogout:hover{
+//     background-color: white;
+//     border: 2px solid #37BC9D;
+//     color: black;
+// }
+
+
+.navbar {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: #eceff1;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 35% 15%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "menulogo carritocuenta carritocuenta carritocuenta"
+        "search search search search";
+
+}
+
+form.formulari-busqueda {
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-search {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #{$secundary-color};
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+  }
+  
+.btn-search:focus,
+.search:focus {
+    border: 2px solid #{$secundary-color};
+    outline: none;
+}
+
+  
+input.search {
+    width: 100%;
+    padding: 9px 4px 9px 4px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid #37BC9D;
+    margin-right: -1px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#accountIcon {
+    width: 38px;
+    border-radius: 20px;
+}
+
+.navbar img {
+    height: 38px;
+}
+
+#carritoIcon {
+    justify-self: right;
+    height: 38px;
+    width: 38px;
+}
+  
+  .carrito-cuenta .cuenta3 {
+    margin-right: 20px;
+  }
+  
+  .menu {
+    /* Oculta el menú por defecto */
+   display: none;
+   position: relative; /* Permite posicionar el menú en la página */
+   top: 60px;
+   right: 59px;
+   background-color: #fff;
+   border: 1px solid #37BC9D;
+   border-radius: 5px;
+   width: 150px;
+   z-index: 999;
+  }
+  
+  .menu.show {
+    display: block;
+  }
+  
+  .menu .menu-options {
+   list-style: none;
+   font-size: 14px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+
+  .menu_option{
+    display: flex;
+    width: 100%;
+  }
+  
+  .menu .menu_option {
+   margin: 0;
+   border-bottom: 1px solid #37BC9D;
+  }
+  
+  .menu .menu_option:last-child {
+   border-bottom: none;
+  }
+  
+.menu_option a{
+   color: #333;
+   text-decoration: none;
+   text-align: center;
+   padding: 10px;
+   width: 100%;
+  }
+  
+  .menu .menu_option a:hover{
+   background-color: #37BC9D;
+   color: white;
+  }
+
+  .carrito-cuenta .cuenta2 {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+    background-color: #2e4053;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .image-perfil{
+    position: absolute;
+  }
+
+
+
+@media (min-width: 600px) {
+
+    .menu-logo{
+        grid-area: menulogo;
+        display: flex;
+        justify-content: flex-end;
+    
+    }
+
+    .carrito-cuenta{
+        grid-area: carritocuenta;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .menu-logo .logo{
+        margin-left: 0px;
+    }
+
+    .navbar {
+        display: grid;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        border-bottom-style: solid;
+        border-bottom-color: #eceff1;
+        padding-top: 0px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "menulogo search search carritocuenta";
+    
+    }
+
+    .barraBusqueda{
+        grid-area: search;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    form.formulari-busqueda {
+        border: none;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

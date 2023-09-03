@@ -1,0 +1,23 @@
+== Creación Vagrant
+
+Hemos creado un escenario de Vagrant que utilizaremos para la base de datos y configurar el servidor web.
+
+Este escenario esta dirigido por un vagrantfile donde hemos puesto una configuración que nos levantara automáticamente nuestro vagrant si ponemos en terminal el comando "vagrant up".
+
+== SASS
+
+Para poder usar la herramienta SASS en nuestro proyecto Laravel hemos instalado Node.js y el gestor de paquetes npm.
+
+Como hemos instalado la version 18.14.2 de Node.js ya vienen los paquetes de npm dentro de este.
+
+Abrimos la terminal del proyecto y ponemos la comanda "npm init" que instalará Node.js en el proyecto con los módulos de Node. Introducimos todos los datos de nuestro proyecto y te generará automáticamente el fichero package.json, donde encontramos toda la información que hemos introducido.
+
+Después instalamos el módulo de SASS con la comanda "npm install node-sass --save-dev" y crearemos un directorio scss con el fichero main.scss.
+
+Hay dos formas diferentes de compilar SASS, de manera manual o automática.
+
+Decidimos utilizar el SASS con compilación manual, esto implica añadir en el fichero "package.json" la siguiente línea:
+
+"compile:sass": "node-sass sass/main.scss css/style.css"
+
+Finalmente, si ejecutamos esta comanda "npm run compile:sass", compilará todo aquello que haya al fichero main.scss y lo guardará al fichero style.css.

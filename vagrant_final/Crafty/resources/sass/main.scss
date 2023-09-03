@@ -1,0 +1,40 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'vendors/bootstrap';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/forms';
+@import 'layout/pagination';
+
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/cover';
+@import 'components/dropdown';
+
+@import 'pages/home';
+@import 'pages/carrito';
+@import 'pages/detalle';
+@import 'pages/detalleProducto';
+@import 'pages/register';
+@import 'pages/login';
+@import 'pages/rememberPassword';
+@import 'pages/newPassword';
+@import 'pages/tienda';
+@import 'pages/genericError';
+@import 'pages/landing';
+@import 'pages/detallePedido';
+@import 'pages/chat';
+@import 'pages/historial';
+
+@import 'themes/theme';
+@import 'themes/admin';
+
+
